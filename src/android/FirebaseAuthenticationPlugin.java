@@ -171,7 +171,7 @@ public class FirebaseAuthenticationPlugin extends ReflectiveCordovaPlugin implem
 
                     @Override
                     public void onVerificationFailed(FirebaseException e) {
-                        callbackContext.error(e.getMessage());
+                        callbackContext.error(e.toString());
                     }
                 }
         );
